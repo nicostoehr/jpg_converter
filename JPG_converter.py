@@ -3,7 +3,7 @@ from os import getcwd, listdir
 
 pics = listdir(getcwd())
 
-col = input('Hintergrund Farbe wählen( R, G, B oder #hexcode oder weiß oder schwarz ):  ')
+col = input('Choose background color( R, G, B or #hexcode):  ')
 if col.startswith('#'):
     col = ImageColor.getcolor(col, "RGB")
 elif "," in col:
